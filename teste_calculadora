@@ -37,7 +37,10 @@ class TestCalculadora(unittest.TestCase):
         self.assertEqual(calculadora_v4(2, 3, '^'), 8)
         
     def teste_operacoes_diversas(self):
-        self.assertTrue(math.isnan(calculadoraa(5, 0, '/')))
+        self.assertTrue(math.isnan(calculadora(5, 0, '/')))
         self.assertTrue(math.isnan(calculadora(5, 0, '%')))
         
         self.assertTrue(math.isnan(calculadora(2, 3, '$')))
+        
+if __name__ == '__main__':
+    unittest.main()
